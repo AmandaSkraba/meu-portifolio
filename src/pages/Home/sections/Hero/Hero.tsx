@@ -43,7 +43,7 @@ const Hero = () => {
                                     <Typography variant="button">Baixar meu curriculo</Typography>
                                 </StyledButtonOutline>
                             </Grid>
-                            <Grid item={true} xs={12} md={4} sx={{ marginInline: { xs: "50px", md: "0" } }} justifyContent="center">
+                            <Grid item={true} xs={12} md={4} sx={{ marginInline: { xs: "50px", md: "0" } }} mb={2} justifyContent="center">
                                 <StyledButton onclick={() => onButtonContact()}>
                                     <Typography variant="button">Entrar em contato</Typography>
                                 </StyledButton>

@@ -8,13 +8,23 @@ const NavBar = () => {
         backgroundColor: theme.palette.secondary.main
     }));
 
+    const StyledMenuItem = styled(MenuItem)(({ theme }) => ({
+        display: "flex",
+        justifyContent: "space-evenly",
+        backgroundColor: theme.palette.secondary.main,
+
+        '&:hover': {
+            backgroundColor: theme.palette.secondary.dark,
+        }
+    }));
+
     return (
         <>
             <AppBar position="relative">
                 <StyledToobar>
-                    <MenuItem>Início</MenuItem>
-                    <MenuItem>Projetos</MenuItem>
-                    <MenuItem>Contato</MenuItem>
+                    <StyledMenuItem>Início</StyledMenuItem>
+                    <StyledMenuItem>Sobre mim</StyledMenuItem>
+                    <StyledMenuItem>Projetos</StyledMenuItem>
                 </StyledToobar>
             </AppBar>
         </>
