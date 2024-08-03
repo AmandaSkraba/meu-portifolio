@@ -2,7 +2,7 @@ import { Grid, styled, Typography } from "@mui/material";
 import ImgHero from "../../../../components/ImgHero/ImgHero";
 import StyledButtonOutline from "../../../../components/Buttons/StyledButtonOutline";
 import StyledButton from "../../../../components/Buttons/StyledButton";
-
+import PDFDocument from "../../../../assets/documents/Curriculo.pdf"
 
 const Hero = () => {
 
@@ -12,6 +12,24 @@ const Hero = () => {
         alignItems: "center"
     }));
 
+    const onButtonDowloadClick = () => {
+        const pdfUrl = PDFDocument;
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "Curriculo.pdf"; // specify the filename
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
+    const onButtonContact = () =>{
+        console.log("contato");
+        const link = document.createElement("a");
+        link.href = "https://api.whatsapp.com/send?phone=5541988222242&text=Ol%C3%A1,%20encontrei%20seu%20portif%C3%B3lio%20e%20gostaria%20de%20conversar!";
+        link.target = "_blank";
+        link.click();
+    }
+
     return (
         <>
             <StyledHero>
@@ -20,13 +38,13 @@ const Hero = () => {
                         <Typography color="primary.contrastText" variant="h6" textAlign="center">Desenvolvedora Front-end</Typography>
                         <Typography color="primary.contrastText" variant="h1" textAlign="center">Amanda Skraba</Typography>
                         <Grid container justifyContent="center" spacing={3} marginTop={1}>
-                            <Grid item={true} xs={12} md={4} sx={{ marginInline: {xs: "50px", md:"0"} }} justifyContent="center">
-                                <StyledButtonOutline>
+                            <Grid item={true} xs={12} md={4} sx={{ marginInline: { xs: "50px", md: "0" } }} justifyContent="center">
+                                <StyledButtonOutline onclick={() => onButtonDowloadClick()}>
                                     <Typography variant="button">Baixar meu curriculo</Typography>
                                 </StyledButtonOutline>
                             </Grid>
-                            <Grid item={true} xs={12} md={4} sx={{ marginInline: {xs: "50px", md:"0"} }} justifyContent="center">
-                                <StyledButton>
+                            <Grid item={true} xs={12} md={4} sx={{ marginInline: { xs: "50px", md: "0" } }} justifyContent="center">
+                                <StyledButton onclick={() => onButtonContact()}>
                                     <Typography variant="button">Entrar em contato</Typography>
                                 </StyledButton>
                             </Grid>

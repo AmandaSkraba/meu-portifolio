@@ -3,9 +3,10 @@ import React, { ReactNode } from "react";
 
 interface StyledButtonOutlineProps {
     children: ReactNode
+    onclick: () => void
 }
 
-const StyledButtonOutline: React.FC<StyledButtonOutlineProps> = ({ children }) => {
+const StyledButtonOutline: React.FC<StyledButtonOutlineProps> = ({ children, onclick }) => {
     const StyledButtonOutline = styled("button")(({ theme }) => ({
         backgroundColor: 'transparent',
         border: `1px solid ${theme.palette.primary.contrastText}`,
@@ -28,7 +29,7 @@ const StyledButtonOutline: React.FC<StyledButtonOutlineProps> = ({ children }) =
 
     return (
         <>
-            <StyledButtonOutline>
+            <StyledButtonOutline onClick={onclick}>
                 {children}
             </StyledButtonOutline>
         </>
