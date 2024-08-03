@@ -3,7 +3,8 @@ import Avatar from "../../../src/assets/images/testeimg.jpg"
 
 const ImgHero = () => {
     const ImgHero = styled("div")(({ theme }) => ({
-        width: "calc(100%/1.2)",      
+        width: "calc(100%/1.2)",
+        height:'calc(100%/1.55)',
         backgroundImage: `url(${Avatar})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -13,6 +14,10 @@ const ImgHero = () => {
         flexDirection: "column",
         alignItems: "flex-end",
         backgroundPositionY: "calc(100% / 4)",
+
+        [theme.breakpoints.up('xs')]: { /*<= mobile*/
+            height: '70%',
+        }
     }));
 
     const ShapeAbove = styled("div")(({ theme }) => ({
@@ -33,7 +38,7 @@ const ImgHero = () => {
 
     return (
         <>
-            <ImgHero sx={{height:{xs:"70%", md:"calc(100%/1.55)"}}}>
+            <ImgHero>
                 <ShapeAbove></ShapeAbove>
                 <ShapeBelow></ShapeBelow>
             </ImgHero>
