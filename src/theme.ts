@@ -16,10 +16,14 @@ let theme = createTheme({
             textTransform: "uppercase",
             fontWeight:'50'
         },
+        h4:{
+            textTransform: "uppercase",
+            fontWeight:'300'
+        },
         h6:{
             textTransform: "uppercase",
             fontWeight:'400'
-        }
+        },
     },
 });
 
