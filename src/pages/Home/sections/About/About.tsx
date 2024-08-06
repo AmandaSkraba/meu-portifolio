@@ -34,16 +34,18 @@ const About = () => {
                                 src={IAGirl}
                             />
                         </Grid>
-                        <Grid item={true} xs={12} md={7} sx={{ textAlign: { xs: 'center', md:'start' } }}>
-                            <StyledOutlineChip></StyledOutlineChip>
-                            <Typography marginTop={2} color="primary.contrastText" variant="h4">Um Pouco de mim...</Typography>
-                            <Typography marginTop={2} color="primary.contrastText" variant="body1">
-                                Sou estudante de Engenharia de Software, cursando o penúltimo ano na Universidade UniCV e estou focada em me tornar uma especialista em desenvolvimento Full-Stack.
-                            </Typography>
-                            <Typography color="primary.contrastText" variant="body1">
-                                Iniciei na área aos 14 anos, quando fiz meu primeiro curso “Eu posso programar minha página web”, da Microsoft, voltado para meninas na TI.
-                            </Typography>  
-                            <StyledSocialButtons></StyledSocialButtons>                          
+                        <Grid item={true} xs={12} md={7} display="flex" justifyContent="center" sx={{ textAlign: { xs: 'justify', md: 'justify' } }} >
+                            <Grid item sx={{ maxWidth: { xs: 380, md: '100%' } }}>
+                                <StyledOutlineChip></StyledOutlineChip>
+                                <Typography marginTop={2} color="primary.contrastText" variant="h4">Um Pouco de mim...</Typography>
+                                <Typography marginTop={2} color="primary.contrastText" variant="body1">
+                                    Sou estudante de Engenharia de Software, cursando o penúltimo ano na Universidade UniCV e estou focada em me tornar uma especialista em desenvolvimento Full-Stack.
+                                </Typography>
+                                <Typography color="primary.contrastText" variant="body1">
+                                    Iniciei na área aos 14 anos, quando fiz meu primeiro curso “Eu posso programar minha página web”, da Microsoft, voltado para meninas na TI.
+                                </Typography>
+                                <StyledSocialButtons></StyledSocialButtons>
+                            </Grid>
                         </Grid>
                     </Grid>
                 </Container>
