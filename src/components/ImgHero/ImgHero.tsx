@@ -17,6 +17,7 @@ const ImgHero = () => {
 
         [theme.breakpoints.up('xs')]: { /*<= mobile*/
             height: '70%',
+            transform:'translateY(40px)'
         }
     }));
 

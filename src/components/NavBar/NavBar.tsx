@@ -1,4 +1,5 @@
-import { AppBar, MenuItem, styled, Toolbar } from "@mui/material"
+import { AppBar, Button, MenuItem, styled, Toolbar } from "@mui/material"
+import { Link } from 'react-scroll'
 
 const NavBar = () => {
 
@@ -20,15 +21,23 @@ const NavBar = () => {
 
     return (
         <>
-            <AppBar position="relative">
+            <AppBar position="fixed">
                 <StyledToobar>
-                    <StyledMenuItem>Início</StyledMenuItem>
-                    <StyledMenuItem>Sobre mim</StyledMenuItem>
-                    <StyledMenuItem>Projetos</StyledMenuItem>
+                    <Link to="section1" smooth={true} duration={500}>
+                        <Button color="inherit">Início</Button>
+                    </Link>
+                    <Link to="section2" smooth={true} duration={500}>
+                        <Button color="inherit">Sobre mim</Button>
+                    </Link>
+                    <Link to="section3" smooth={true} duration={500}>
+                        <Button color="inherit">Projetos</Button>
+                    </Link>
                 </StyledToobar>
             </AppBar>
         </>
     )
+
+
 }
 
 export default NavBar
