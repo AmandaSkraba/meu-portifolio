@@ -1,6 +1,11 @@
 import { Chip, styled } from "@mui/material";
 
-const StyledOutlineChip = () => {
+interface StyledChipProps {
+    label: String
+}
+
+
+const StyledOutlineChip: React.FC<StyledChipProps> = ({ label }) => {
     const StyledOutlineChip = styled(Chip)(({ theme }) => ({
         color: theme.palette.primary.contrastText,
         borderColor: theme.palette.primary.main,
@@ -10,7 +15,7 @@ const StyledOutlineChip = () => {
 
     return (
         <>
-            <StyledOutlineChip label="Minha História" variant="outlined" size="small"></StyledOutlineChip>
+            <StyledOutlineChip label={label} variant="outlined" size="small"></StyledOutlineChip>
         </>
     )
 }

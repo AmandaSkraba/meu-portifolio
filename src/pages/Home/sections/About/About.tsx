@@ -36,7 +36,7 @@ const About = () => {
                         </Grid>
                         <Grid item={true} xs={12} md={7} display="flex" justifyContent="center" sx={{ textAlign: { xs: 'justify', md: 'justify' } }} >
                             <Grid item sx={{ maxWidth: { xs: 380, md: '100%' } }}>
-                                <StyledOutlineChip></StyledOutlineChip>
+                                <StyledOutlineChip label="Minha História"></StyledOutlineChip>
                                 <Typography marginTop={2} color="primary.contrastText" variant="h4">Um Pouco de mim...</Typography>
                                 <Typography marginTop={2} color="primary.contrastText" variant="body1">
                                     Sou estudante de Engenharia de Software, cursando o penúltimo ano na Universidade UniCV e estou focada em me tornar uma especialista em desenvolvimento Full-Stack.
