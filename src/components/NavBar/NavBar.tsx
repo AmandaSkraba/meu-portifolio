@@ -9,7 +9,7 @@ const NavBar = () => {
         backgroundColor: theme.palette.secondary.main
     }));
 
-    const StyledMenuItem = styled(MenuItem)(({ theme }) => ({
+    /*const StyledMenuItem = styled(MenuItem)(({ theme }) => ({
         display: "flex",
         justifyContent: "space-evenly",
         backgroundColor: theme.palette.secondary.main,
@@ -17,19 +17,19 @@ const NavBar = () => {
         '&:hover': {
             backgroundColor: theme.palette.secondary.dark,
         }
-    }));
+    }));*/
 
     return (
         <>
             <AppBar position="fixed">
                 <StyledToobar>
-                    <Link to="section1" smooth={true} duration={500}>
+                    <Link to="hero" smooth={true} duration={500}>
                         <Button color="inherit">Início</Button>
                     </Link>
-                    <Link to="section2" smooth={true} duration={500}>
+                    <Link to="about" smooth={true} duration={500}>
                         <Button color="inherit">Sobre mim</Button>
                     </Link>
-                    <Link to="section3" smooth={true} duration={500}>
+                    <Link to="skills" smooth={true} duration={500}>
                         <Button color="inherit">Projetos</Button>
                     </Link>
                 </StyledToobar>
