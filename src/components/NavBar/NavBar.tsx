@@ -1,4 +1,4 @@
-import { AppBar, Button, MenuItem, styled, Toolbar } from "@mui/material"
+import { AppBar, Button, styled, Toolbar } from "@mui/material"
 import { Link } from 'react-scroll'
 
 const NavBar = () => {
