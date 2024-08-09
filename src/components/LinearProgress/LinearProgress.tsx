@@ -5,7 +5,7 @@ interface ProgressLinearProps {
 }
 
 const ProgressLinear: React.FC<ProgressLinearProps> = ({ label }) => {
-    const StyledProgressLinear = styled(LinearProgress)(({ theme }) => ({
+    const StyledProgressLinear = styled(LinearProgress)(() => ({
         display: "flex",
         alignItems: "center",
         height: '10px',

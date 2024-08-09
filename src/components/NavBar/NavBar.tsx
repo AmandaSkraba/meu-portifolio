@@ -30,7 +30,7 @@ const NavBar = () => {
                         <Button color="inherit">Sobre mim</Button>
                     </Link>
                     <Link to="skills" smooth={true} duration={500}>
-                        <Button color="inherit">Projetos</Button>
+                        <Button color="inherit">Skills</Button>
                     </Link>
                 </StyledToobar>
             </AppBar>

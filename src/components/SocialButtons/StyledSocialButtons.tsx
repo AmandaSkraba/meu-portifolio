@@ -1,10 +1,6 @@
 import { IconButton, styled } from "@mui/material";
 import { Instagram, FacebookRounded, WhatsApp, LinkedIn } from '@mui/icons-material';
 
-/*import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';*/
-
 const onButtonSocial = (socialButton: string) => {
     const link = document.createElement("a");
     switch (socialButton) {
