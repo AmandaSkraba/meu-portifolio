@@ -1,10 +1,11 @@
 import { LinearProgress, styled, Typography } from "@mui/material"
 
 interface ProgressLinearProps {
-    label: String
+    label: String,
+    value: number
 }
 
-const ProgressLinear: React.FC<ProgressLinearProps> = ({ label }) => {
+const ProgressLinear: React.FC<ProgressLinearProps> = ({ label, value }) => {
     const StyledProgressLinear = styled(LinearProgress)(() => ({
         display: "flex",
         alignItems: "center",
@@ -17,7 +18,7 @@ const ProgressLinear: React.FC<ProgressLinearProps> = ({ label }) => {
     return (
         <>
             <Typography marginTop={2} color="primary.contrastText" variant="body1">{label}</Typography>
-            <StyledProgressLinear value={100} variant="determinate" title="test" />
+            <StyledProgressLinear value={value} variant="determinate" title={value + "%"} />
         </>
     )
 }
