@@ -41,7 +41,7 @@ const About = () => {
                                 <Typography marginTop={2} color="primary.contrastText" variant="body1">
                                     Sou estudante de Engenharia de Software, cursando o penúltimo ano na Universidade UniCV e estou focada em me tornar uma especialista em desenvolvimento Full-Stack.
                                 </Typography>
-                                <Typography color="primary.contrastText" variant="body1">
+                                <Typography color="primary.contrastText" variant="body1" marginBottom="15px">
                                     Iniciei na área aos 14 anos, quando fiz meu primeiro curso “Eu posso programar minha página web”, da Microsoft, voltado para meninas na TI.
                                 </Typography>
                                 <StyledSocialButtons></StyledSocialButtons>
