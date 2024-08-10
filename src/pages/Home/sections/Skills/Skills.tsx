@@ -7,7 +7,8 @@ const Skills = () => {
         backgroundColor: theme.palette.secondary.main,
         display: "flex",
         alignItems: "center",
-        height: '75vh',       
+        height: '100vh',  
+        paddingBottom:50,      
 
         [theme.breakpoints.down('md')]: { 
             paddingTop:40, 
@@ -24,41 +25,41 @@ const Skills = () => {
                             <StyledOutlineChip label="Skills"></StyledOutlineChip>
                             <Typography marginTop={2} color="primary.contrastText" variant="h4">Confira minhas habilidades!</Typography>
                         </Grid>
-                        <Grid container rowSpacing={1} columnSpacing={4}>
-                            <Grid xs={12} sm={12} md={4} item>
+                        <Grid container rowSpacing={1} columnSpacing={4} display="flex" justifyContent="center">
+                            <Grid xs={9} sm={12} md={4} item>
                                 <ProgressLinear label="HTML" value={100} />
                             </Grid>
-                            <Grid xs={12} sm={12} md={4} item>
+                            <Grid xs={9} sm={12} md={4} item>
                                 <ProgressLinear label="CSS" value={100} />
                             </Grid>
-                            <Grid xs={12} sm={12} md={4} item>
+                            <Grid xs={9} sm={12} md={4} item>
                                 <ProgressLinear label="Javascript" value={65} />
                             </Grid>
-                            <Grid xs={12} sm={12} md={4} item>
+                            <Grid xs={9} sm={12} md={4} item>
                                 <ProgressLinear label="Bootstrap" value={100} />
                             </Grid>
-                            <Grid xs={12} sm={12} md={4} item>
+                            <Grid xs={9} sm={12} md={4} item>
                                 <ProgressLinear label="Jquery" value={75} />
                             </Grid>
-                            <Grid xs={12} sm={12} md={4} item>
+                            <Grid xs={9} sm={12} md={4} item>
                                 <ProgressLinear label="Typescript" value={45} />
                             </Grid>
-                            <Grid xs={12} sm={12} md={4} item>
+                            <Grid xs={9} sm={12} md={4} item>
                                 <ProgressLinear label="Angular" value={45} />
                             </Grid>
-                            <Grid xs={12} sm={12} md={4} item>
+                            <Grid xs={9} sm={12} md={4} item>
                                 <ProgressLinear label="React" value={20} />
                             </Grid>
-                            <Grid xs={12} sm={12} md={4} item>
+                            <Grid xs={9} sm={12} md={4} item>
                                 <ProgressLinear label="Figma" value={90} />
                             </Grid>
-                            <Grid xs={12} sm={12} md={4} item>
+                            <Grid xs={9} sm={12} md={4} item>
                                 <ProgressLinear label="GIT/Github" value={55} />
                             </Grid>
-                            <Grid xs={12} sm={12} md={4} item>
+                            <Grid xs={9} sm={12} md={4} item>
                                 <ProgressLinear label=".Net" value={25} />
                             </Grid>
-                            <Grid xs={12} sm={12} md={4} item>
+                            <Grid xs={9} sm={12} md={4} item>
                                 <ProgressLinear label="MySQL" value={25} />
                             </Grid>
                         </Grid>

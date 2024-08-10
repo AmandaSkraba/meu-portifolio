@@ -3,6 +3,7 @@ import ImgHero from "../../../../components/ImgHero/ImgHero";
 import StyledButtonOutline from "../../../../components/Buttons/StyledButtonOutline";
 import StyledButton from "../../../../components/Buttons/StyledButton";
 import PDFDocument from "../../../../assets/documents/Curriculo.pdf"
+import theme from "../../../../theme";
 
 const Hero = () => {
 
@@ -44,7 +45,7 @@ const Hero = () => {
                                 </StyledButtonOutline>
                             </Grid>
                             <Grid item={true} xs={12} md={4} sx={{ marginInline: { xs: "50px", md: "0" } }} mb={2} justifyContent="center">
-                                <StyledButton onclick={() => onButtonContact()}>
+                                <StyledButton backgroundColor={theme.palette.primary.main} textColor={theme.palette.primary.contrastText} onclick={() => onButtonContact()}>
                                     <Typography variant="button">Entrar em contato</Typography>
                                 </StyledButton>
                             </Grid>

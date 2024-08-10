@@ -8,6 +8,10 @@ let theme = createTheme({
         secondary: {
             main: "#0C0F10",
         },
+        common:{
+            white: "#ffffff",
+            black:"#0C0F10"
+        }
     },
     typography: {
         fontFamily: "Poppins",
@@ -19,6 +23,11 @@ let theme = createTheme({
         h4:{
             textTransform: "uppercase",
             fontWeight:'300'
+        },
+        h5:{
+            fontSize:'20px',
+            textTransform: "uppercase",
+            fontWeight:'500'
         },
         h6:{
             textTransform: "uppercase",
