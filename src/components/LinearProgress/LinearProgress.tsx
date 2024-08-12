@@ -10,7 +10,7 @@ const ProgressLinear: React.FC<ProgressLinearProps> = ({ label, value }) => {
         display: "flex",
         alignItems: "center",
         height: '10px',
-        backgroundColor: 'rgb(19 22 23)',
+        backgroundColor: 'rgb(66 69 69)',
         borderRadius: 20
     }));
 

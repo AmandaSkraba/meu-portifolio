@@ -39,22 +39,22 @@ const Projects = () => {
             <StyledProjects>
                 <Container>
                     <StyledGridContainer container rowSpacing={2} columnSpacing={2}>
-                        <Grid item md={4} display="flex" flexDirection="column" alignItems="center" gap={2}>
+                        <Grid item md={4} display="flex" flexDirection="column" alignItems="center" gap={2} zIndex={1}>
                             <Grid item md={12}>
-                                <ImageCard img={ImgZimmer} link="https://www.transportadorazimmer.com.br/"/>
+                                <ImageCard img={ImgZimmer} link="https://www.transportadorazimmer.com.br/" />
                             </Grid>
                             <Grid item md={12}>
-                                <ImageCard img={ImgCooperhec} link="https://www.cooperhec.com.br/"/>
+                                <ImageCard img={ImgCooperhec} link="https://www.cooperhec.com.br/" />
                             </Grid>
                         </Grid>
 
-                        <StyledGridItem item md={4} display="flex" justifyContent="center" >
+                        <StyledGridItem item md={4} display="flex" justifyContent="center">
                             <Grid item md={12} display="flex" flexDirection="column" alignItems="center" justifyContent="center">
                                 <TextWork></TextWork>
                             </Grid>
                         </StyledGridItem>
 
-                        <Grid item md={4} display="flex" flexDirection="column" alignItems="center" gap={2}>
+                        <Grid item md={4} display="flex" flexDirection="column" alignItems="center" gap={2} zIndex={1}>
                             <Grid item md={12}>
                                 <ImageCard img={ImgSallocin} link="https://sallocin.com/" />
                             </Grid>

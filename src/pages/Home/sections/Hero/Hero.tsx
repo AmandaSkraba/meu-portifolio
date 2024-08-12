@@ -35,7 +35,7 @@ const Hero = () => {
         <>
             <StyledHero>
                 <Grid container spacing={2} display="flex" alignItems="center">
-                    <Grid item={true} xs={12} md={6} sx={{ order: { xs: 2, sm: 1 } }}>
+                    <Grid item={true} xs={12} md={6} sx={{ order: { xs: 2, md: 1 } }}>
                         <Typography color="primary.contrastText" variant="h6" textAlign="center">Desenvolvedora Front-end</Typography>
                         <Typography color="primary.contrastText" variant="h1" textAlign="center">Amanda Skraba</Typography>
                         <Grid container justifyContent="center" spacing={3} marginTop={1}>
@@ -52,7 +52,7 @@ const Hero = () => {
                         </Grid>
                     </Grid>
                     <Grid item={true} xs={12} md={6}
-                        sx={{ order: { xs: 1, sm: 2 }, height: { xs: '60vh', md: '100vh' }, width: { xs: '20vw', md: '100vw' } }}
+                        sx={{ order: { xs: 1, md: 2 }, height: { xs: '60vh', md: '100vh' }, width: { xs: '20vw', md: '100vw' } }}
                         display="flex" alignItems="center" justifyContent="end">
                         <ImgHero></ImgHero>
                     </Grid>
